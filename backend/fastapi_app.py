@@ -3,7 +3,7 @@ import pickle
 
 app = FastAPI()
 
-with open('Backend/best_model.pkl', 'rb') as f:
+with open('backend/best_model.pkl', 'rb') as f:
     model = pickle.load(f)
 
 @app.get("/")
